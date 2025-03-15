@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>843</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hóa đơn</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F5F5F5; color: black;</string>
+  </property>
+  <widget class="QTableWidget" name="orderTable">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>21</y>
+     <width>781</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="orderDetailTable">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>781</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>781</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="addButton">
+      <property name="text">
+       <string>Thêm hóa đơn</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #4CAF50; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="editButton">
+      <property name="text">
+       <string>Sửa hóa đơn</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #FFD700; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteButton">
+      <property name="text">
+       <string>Xóa hóa đơn</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #FF6B6B; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="refreshButton">
+      <property name="text">
+       <string>Làm mới</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #E6F3FF; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="searchButton">
+      <property name="text">
+       <string>Tìm kiếm</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #FFD700; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="searchBox">
+      <property name="styleSheet">
+       <string>background-color: #E6F3FF; color: black;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

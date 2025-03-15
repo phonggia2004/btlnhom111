@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddOrderDialog</class>
+ <widget class="QDialog" name="AddOrderDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Thêm Đơn Hàng</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F5F5F5; color: black;</string>
+  </property>
+  <widget class="QLabel" name="label_khach_hang">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Khách Hàng:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: black;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_khach">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #E6F3FF; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ngay_lap">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ngày Lập:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: black;</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="date_edit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>60</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #E6F3FF; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_danh_muc">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Danh Mục:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: black;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_danhmuc">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>100</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #E6F3FF; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_sanpham">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>140</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #E6F3FF; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_san_pham">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sản Phẩm:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_so_luong">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Số Lượng:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: black;</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spin_sl">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>180</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #E6F3FF; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_add">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Thêm vào bảng</string>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFD700; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>20</y>
+     <width>511</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Loại</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Mã</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Số lượng</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Giá</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_tong_tien">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tổng Tiền:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tong_tien_value">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>130</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0 VNĐ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFF3E0; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_save">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>170</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lưu Đơn Hàng</string>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #4CAF50; color: black;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

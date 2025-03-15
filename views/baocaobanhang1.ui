@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>842</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F5F5F5; color: black;</string>
+  </property>
+  <widget class="QTabWidget" name="reportTabs">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>778</width>
+     <height>578</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; color: black;</string>
+   </property>
+   <widget class="QWidget" name="overviewTab">
+    <attribute name="title">
+     <string>Tổng quan</string>
+    </attribute>
+    <layout class="QVBoxLayout" name="verticalLayoutOverview">
+     <item>
+      <widget class="QLabel" name="totalRevenueLabel">
+       <property name="text">
+        <string>Tổng doanh thu: 0 VNĐ</string>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #FFF3E0; color: black;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="totalProductsSoldLabel">
+       <property name="text">
+        <string>Tổng số lượng sản phẩm bán ra: 0</string>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #FFF3E0; color: black;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="orderListTab">
+    <attribute name="title">
+     <string>Danh sách đơn hàng</string>
+    </attribute>
+    <layout class="QVBoxLayout" name="verticalLayoutOrderList">
+     <item>
+      <widget class="QTableWidget" name="orderTable">
+       <property name="styleSheet">
+        <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Mã đơn</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Ngày bán</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Khách hàng</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Sản phẩm</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Số lượng</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Giá trị đơn hàng</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="productSalesTab">
+    <attribute name="title">
+     <string>Doanh số theo loại</string>
+    </attribute>
+    <layout class="QVBoxLayout" name="verticalLayoutProductSales">
+     <item>
+      <widget class="QTableWidget" name="productSalesTable">
+       <property name="styleSheet">
+        <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Loại mặt hàng</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tên</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Số lượng bán</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Doanh thu</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="timeRevenueTab">
+    <attribute name="title">
+     <string>Doanh thu theo thời gian</string>
+    </attribute>
+    <layout class="QVBoxLayout" name="verticalLayoutTimeRevenue">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutTimeFilters">
+       <item>
+        <widget class="QComboBox" name="timePeriodCombo">
+         <property name="styleSheet">
+          <string>background-color: #E6F3FF; color: black;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Ngày</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Tháng</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quý</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Năm</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelStartDate">
+         <property name="text">
+          <string>Ngày bắt đầu:</string>
+         </property>
+         <property name="styleSheet">
+          <string>color: black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="startDateEdit">
+         <property name="styleSheet">
+          <string>background-color: #E6F3FF; color: black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelEndDate">
+         <property name="text">
+          <string>Ngày kết thúc:</string>
+         </property>
+         <property name="styleSheet">
+          <string>color: black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="endDateEdit">
+         <property name="styleSheet">
+          <string>background-color: #E6F3FF; color: black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="generateTimeReportButton">
+         <property name="text">
+          <string>Tạo báo cáo</string>
+         </property>
+         <property name="styleSheet">
+          <string>background-color: #4CAF50; color: black;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="timeRevenueTable">
+       <property name="styleSheet">
+        <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Thời gian</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Doanh thu</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="potentialCustomersTab">
+    <attribute name="title">
+     <string>Khách hàng tiềm năng</string>
+    </attribute>
+    <layout class="QVBoxLayout" name="verticalLayoutPotentialCustomers">
+     <item>
+      <widget class="QTableWidget" name="potentialCustomersTable">
+       <property name="styleSheet">
+        <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Mã khách</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tên</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Số lần mua</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tổng giá trị đơn hàng</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="employeePerformanceTab">
+    <attribute name="title">
+     <string>Hiệu suất nhân viên</string>
+    </attribute>
+    <layout class="QVBoxLayout" name="verticalLayoutEmployeePerformance">
+     <item>
+      <widget class="QTableWidget" name="employeePerformanceTable">
+       <property name="styleSheet">
+        <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Mã nhân viên</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tên</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Số đơn hàng</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tổng doanh thu</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

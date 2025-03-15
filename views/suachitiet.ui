@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditDetailDialog</class>
+ <widget class="QDialog" name="EditDetailDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sửa Chi Tiết Hóa Đơn</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F5F5F5; color: black;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Loại:</string>
+       </property>
+       <property name="styleSheet">
+        <string>color: black;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="typeComboBox">
+       <property name="styleSheet">
+        <string>background-color: #E6F3FF; color: black;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Sản phẩm</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Thú cưng</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="itemTable">
+     <property name="styleSheet">
+      <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Số lượng:</string>
+       </property>
+       <property name="styleSheet">
+        <string>color: black;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="quantitySpinBox">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #E6F3FF; color: black;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="text">
+        <string>Lưu</string>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #4CAF50; color: black;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>Hủy</string>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #FF6B6B; color: black;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+</ui>

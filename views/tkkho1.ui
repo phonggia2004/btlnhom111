@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>830</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Báo cáo kho</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F5F5F5; color: black;</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>7</y>
+     <width>791</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout1">
+    <item>
+     <widget class="QPushButton" name="generateInventoryButton">
+      <property name="text">
+       <string>Tạo báo cáo kho</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #4CAF50; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelFilterType">
+      <property name="text">
+       <string>Loại:</string>
+      </property>
+      <property name="styleSheet">
+       <string>color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="filterTypeCombo">
+      <property name="styleSheet">
+       <string>background-color: #E6F3FF; color: black;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Tất cả</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Thú cưng</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sản phẩm</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelFilterDate">
+      <property name="text">
+       <string>Ngày:</string>
+      </property>
+      <property name="styleSheet">
+       <string>color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDateEdit" name="filterDateEdit">
+      <property name="styleSheet">
+       <string>background-color: #E6F3FF; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="applyFilterButton">
+      <property name="text">
+       <string>Áp dụng lọc</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #FFD700; color: black;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="inventoryTable">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>55</y>
+     <width>778</width>
+     <height>518</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Loại</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tên</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Số Lượng</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="totalQuantityLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>580</y>
+     <width>778</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tổng số lượng tồn kho: 0</string>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFF3E0; color: black;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

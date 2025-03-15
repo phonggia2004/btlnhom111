@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Thống kê doanh thu</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>854</width>
+    <height>636</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Thống kê doanh thu</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F5F5F5; color: black;</string>
+  </property>
+  <widget class="QTableWidget" name="reportTable">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>778</width>
+     <height>518</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; color: black; alternate-background-color: #F0F0F0;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalRevenueLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>778</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tổng doanh thu: 0 VNĐ</string>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFF3E0; color: black;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>791</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="labelStartDate">
+      <property name="text">
+       <string>Ngày bắt đầu:</string>
+      </property>
+      <property name="styleSheet">
+       <string>color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDateEdit" name="startDateEdit">
+      <property name="styleSheet">
+       <string>background-color: #E6F3FF; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelEndDate">
+      <property name="text">
+       <string>Ngày kết thúc:</string>
+      </property>
+      <property name="styleSheet">
+       <string>color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDateEdit" name="endDateEdit">
+      <property name="styleSheet">
+       <string>background-color: #E6F3FF; color: black;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="generateReportButton">
+      <property name="text">
+       <string>Tạo báo cáo</string>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #4CAF50; color: black;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
